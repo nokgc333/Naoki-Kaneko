@@ -13,6 +13,10 @@
         <link rel="stylesheet" href="./css/style.css">
         <!-- ファビコン設置 -->
         <link rel="icon" href="./images/favicon.ico">
+        <!-- フォント(Noto serif JP)適用 -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;700&display=swap" rel="stylesheet">
 
     </head>
 
@@ -208,14 +212,8 @@
                      <!-- チェックイン日 -->
                     <div class="form_item">
                         <label for="checkin_date" class="form_label">チェックイン日<span class="required_star">＊</span></label>
-                        <div class="input_field_wrapper select_wrapper">
-                            <select id="checkin_date" name="checkin_date" class="form_select">
-                                <option value="">選択してください</option>
-                                <!-- 以下はサンプルです。実際には日付を動的に生成するか、カレンダー入力を使用します -->
-                                <option value="2024-09-01">2024年09月01日</option>
-                                <option value="2024-09-02">2024年09月02日</option>
-                                <option value="2024-09-03">2024年09月03日</option>
-                            </select>
+                        <div class="input_field_wrapper">
+                            <input type="date" id="checkin_date" name="checkin_date" class="form_input" placeholder="日付を選択">
                             <p class="validation_message"></p>
                         </div>
                     </div>
@@ -223,14 +221,8 @@
                     <!-- チェックアウト日 -->
                     <div class="form_item">
                         <label for="checkout_date" class="form_label">チェックアウト日<span class="required_star">＊</span></label>
-                        <div class="input_field_wrapper select_wrapper">
-                            <select id="checkout_date" name="checkout_date" class="form_select">
-                                <option value="">選択してください</option>
-                                <!-- 以下はサンプルです -->
-                                <option value="2024-09-02">2024年09月02日</option>
-                                <option value="2024-09-03">2024年09月03日</option>
-                                <option value="2024-09-04">2024年09月04日</option>
-                            </select>
+                        <div class="input_field_wrapper">
+                            <input type="date" id="checkout_date" name="checkout_date" class="form_input" placeholder="日付を選択">
                             <p class="validation_message"></p>
                         </div>
                     </div>

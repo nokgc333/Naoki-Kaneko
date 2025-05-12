@@ -1,4 +1,49 @@
 $(document).ready(function() {
+    // 今日の日付を YYYY-MM-DD 形式で取得する関数
+    function getTodayDateString() {
+        const today = new Date();
+        const yyyy = today.getFullYear();
+
+        const mm = String(today.getMonth() + 1).padStart(2, '0');
+        const dd = String(today.getDate()).padStart(2, '0');
+        return `${yyyy}-${mm}-${dd}`;
+    }
+
+    // 今日の日付文字列を取得
+    const todayString = getTodayDateString();
+
+    // チェックイン日とチェックアウト日の input 要素を取得
+    const $checkinDateInput = $('#checkin_date');
+    const $checkoutDateInput = $('#checkout_date');
+
+    // 両方のinput要素にmin属性を設定して、今日より前の日付を選択不可にする
+    $checkinDateInput.attr('min', todayString);
+    $checkoutDateInput.attr('min', todayString);
+
+    // チェックイン日の値が変更されたときのイベントリスナーを追加
+    $checkinDateInput.on('change', function() {
+        // 選択されたチェックイン日を取得
+        const selectedCheckinDate = $(this).val();
+
+        // チェックイン日が有効な日付として選択されている場合
+        if (selectedCheckinDate) {
+            // チェックアウト日のmin属性を選択されたチェックイン日に設定
+            $checkoutDateInput.attr('min', selectedCheckinDate);
+
+            // オプション：もしチェックアウト日が既に選択されていて、
+            // それが新しいチェックイン日より前だったら、チェックアウト日の値をクリア
+            const currentCheckoutDate = $checkoutDateInput.val();
+            if (currentCheckoutDate && currentCheckoutDate < selectedCheckinDate) {
+                // チェックアウト日の値をリセット
+                $checkoutDateInput.val('');
+            }
+        } else {
+            // チェックイン日がクリアされた場合（例えば手動で削除された場合）
+            // チェックアウト日のmin属性を今日に戻す
+            $checkoutDateInput.attr('min', todayString);
+        }
+    });
+
     // タブ要素/コンテンツ要素取得
     const $tabs = $('.room_select_list .tab');
     const $contents = $('.rooms .room_view');
