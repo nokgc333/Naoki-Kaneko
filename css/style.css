@@ -1111,7 +1111,7 @@ body.page-thanks {
 }
 .thanks_page_container {
   padding-top: 400px;
-  padding-bottom: 80px;
+  padding-bottom: 200px;
   min-height: 1000px;
   box-sizing: border-box;
   display: flex;
@@ -1120,7 +1120,7 @@ body.page-thanks {
   justify-content: flex-start;
 }
 .thanks_content_wrapper {
-  max-width: 1200px;
+  max-width: 1300px;
   width: 90%;
   text-align: center;
   padding: 20px;
