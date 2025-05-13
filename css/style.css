@@ -58,7 +58,7 @@ html, body {
 .logo img{
   max-width: 80%;
   height: auto;
-  padding-left: 45px;
+  padding-left: 30px;
 }
 .nav ul {
   display: flex;
@@ -72,10 +72,11 @@ html, body {
   transition: color 0.3s;
 }
 .menu {
-  font-size: 22px;
+  font-size: 20px;
+  font-weight: 300;
   color: #fff;
-  letter-spacing: 0.4em;
-  margin-right: 35px;
+  letter-spacing: 6px;
+  margin-right: 50px;
 }
 .menu:hover {
   /* 下線 */
@@ -85,12 +86,13 @@ html, body {
 }
 /* 予約ボタン */
 .btn {
-  padding: 12.5px 55px;
-  font-size: 22px;
+  padding: 8px 58px;
+  font-size: 18px;
+  font-weight: 300;
   text-align: center;
   background: #B8A973;
   color: #fff;
-  letter-spacing: 0.35px;
+  letter-spacing: 4px;
   /* 線の太さ */
   border: 1.25px solid #000;
   /* 角丸 */
@@ -125,7 +127,7 @@ html, body {
   margin: 0 auto;
   width: 100%;
   max-width: 1240px;
-  font-size: 40px;
+  font-size: 35px;
   color: #fff;
   font-weight: 100;
   letter-spacing: 0.38em;
@@ -143,15 +145,19 @@ html, body {
   width: 100%;
   max-width: 1240px;
   padding-left: 45px;
-  font-size: 28px;
+  font-size: 25px;
   color: #fff;
   font-weight: 100;
-  letter-spacing: 0.48em;
+  letter-spacing: 0.4em;
   line-height: 1.8;
 }
 /* ひらがな部分テキスト */
 .kana {
-  font-size: 0.8em;
+  font-size: 28px;
+  line-height: 1.8;
+}
+.kana2 {
+  font-size: 22px;
   line-height: 1.8;
 }
 /* PC画面時、該当箇所改行しない */
@@ -195,7 +201,7 @@ html, body {
   }
   .logo img{
       max-width: 100%;
-      min-width: 270px;
+      min-width: 280px;
       display: block;
   }
   /* レスポンス時、該当箇所改行 */
@@ -231,6 +237,14 @@ html, body {
     letter-spacing: 0.48em;
     line-height: 1.6;
   }
+  .kana {
+  font-size: 35px;
+  line-height: 1.8;
+  }
+  .kana2 {
+  font-size: 28px;
+  line-height: 1.8;
+  }
 }
 
 
@@ -257,26 +271,27 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding:0 55px;
 }
 .about_text {
   flex-direction: column;
   align-items: flex-start;
   text-align: left;
+  padding:0 80px;
 }
 /* 左側テキスト(タイトル) */
 .about_title {
-  width: 250px;
+  width: 300px;
   height: auto;
   margin-bottom: 70px;
 }
 /* 左側テキスト */
 .about_description {
   white-space: nowrap;
-  font-size: clamp(12px, 3vw, 20px);
+  font-size: 24px;
+  font-weight: 300;
   color: #383838; ;
-  line-height: 2.1;
-  letter-spacing: 6px;
+  line-height: 2.2;
+  letter-spacing: 6.5px;
 }
 /* 右側写真 */
 .about_images {
@@ -284,12 +299,13 @@ html, body {
   position: relative;
   justify-content: flex-end;
   height: auto;
+  padding:0 55px;
 }
 /* 右側写真[大] */
 .main_image {
-  max-width: 80%;
+  max-width: 150%;
   /* 親要素(about-images)いっぱいに広げる */
-  width: 80%;
+  width: 100%;
   /* 高さ自動設定(縦横比を保ったまま縮小拡大する) */
   height: auto;
 }
@@ -297,16 +313,16 @@ html, body {
 .sub_image {
   /* (about-images)を基準とした配置にする */
   position: absolute;
-  max-width: 200px;
-  width: 200px;
+  max-width: 220px;
+  width: 220px;
   height: auto;
-  left: 75px;
-  bottom: -55px;
+  left: -20px;
+  bottom: -75px;
   /* ドロップシャドウ(横ずれ・縦ずれ・半径・距離・色) */
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 .space {
-  letter-spacing: 8px;
+  letter-spacing: 6.5px;
 }
 
 
@@ -343,7 +359,7 @@ html, body {
     white-space: nowrap;
     font-size: 40px;
     color: #383838;
-    line-height: 1.6;
+    line-height: 1.8;
     letter-spacing: 10px;
   }
   /* 右側写真 */
@@ -395,6 +411,7 @@ html, body {
   position: relative;
   max-width: 1200px;
   margin: 150px auto 0;
+  /* padding: 0 20px; */
 }
 /* 画像(右上) */
 .room_pattern {
@@ -423,6 +440,7 @@ html, body {
 /* お部屋案内ページ内テキスト[タイトル] */
 .room_title01 {
   font-size: 32px;
+  font-weight: 300;
   line-height: 60px;
   letter-spacing: 10px;
   margin-bottom: 80px;
@@ -431,28 +449,29 @@ html, body {
 .room_title02 {
   position: relative;
   top: -4px;
-  font-size: 24px;
+  font-size: 18px;
   display: inline-block;
 }
 /* お部屋案内ページ内テキスト[概要] */
 .room_description {
-  font-size: 20px;
+  font-size: 19px;
+  font-weight: 300;
   color: #383838;
   line-height: 2;
-  letter-spacing: 9.999px;
+  letter-spacing: 4px;
 }
 .wide_spacing {
-  letter-spacing: 11px;
+  letter-spacing: 4.5px;
 }
-.wide_spacing02 {
+/* .wide_spacing02 {
   letter-spacing: 10px;
-}
+} */
 /* 部屋選択ボタンエリア */
 .room_select_list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 30px;
   margin-bottom: 10px
 }
 /* アクティブなタブのスタイル */
@@ -467,8 +486,9 @@ html, body {
   text-align: center;
   padding: 20px;
   font-size: 20px;
+  font-weight: 300;
   background-color: #EDEBD7;
-  letter-spacing: 10px;
+  letter-spacing: 5px;
   /* ホバー時、カーソルを指マーク */
   cursor: pointer;
   /* 背景色をなめらかに変化させる */
@@ -516,23 +536,24 @@ html, body {
   background-color: #fff;
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
   max-width: 1500px;
-  margin: -120px auto 30px;
-  padding: 40px;
+  margin: -35px auto 30px;
+  padding: 35px;
   position: relative;
   z-index:1;
 }
 /* お部屋案内説明[見出し] */
 .room_textarea .title {
-  font-size: 26px;
-  letter-spacing: 13px;
-  margin: 10px 0 20px;
+  font-size: 24px;
+  font-weight: 300;
+  letter-spacing: 8px;
+  margin: 0 0 20px;
   color: #383838;
 }
 /* お部屋案内説明[本文] */
 .room_textarea .text {
-  font-size: 19px;
-  letter-spacing: 9px;
-  margin-top: 25px;
+  font-size: 16.2px;
+  font-weight: 300;
+  letter-spacing: 4.5px;
   color: #383838;
   line-height: 2;
 }
@@ -542,15 +563,49 @@ html, body {
   .room {
     height: auto;
     min-height: 2000px;
-    max-height: 2000px;
-    height: 225vh;
+    max-height: 2800px;
+  }
+  .room_pattern {
+    position: absolute;
+    width: 250px;
+    height: auto;
+    top: -80px;
+    right: -20px;
+    /* ポインタ変更 */
+    pointer-events: none;
+    /* アニメーション */
+    animation: float 4s ease-in-out infinite;
+  }
+  .room_header {
+    margin-bottom: 30px;
+  }
+  .room_title01 {
+    font-size: 48px;
+    font-weight: 300;
+    line-height: 60px;
+    letter-spacing: 10px;
+    margin-bottom: 80px;
+    color: #383838;
+  }
+  .room_title02 {
+    position: relative;
+    top: -4px;
+    font-size: 27px;
+    display: inline-block;
+  }
+  .room_description {
+    font-size: 28.5px;
+    font-weight: 300;
+    color: #383838;
+    line-height: 2;
+    letter-spacing: 4px;
   }
   .room_select_list {
     flex-direction: column;
     gap: 30px;
     margin-bottom: 40px;
   }
-  .room_textarea {
+  /* .room_textarea {
     margin:-80px auto 30px;
     padding: 30px 20px;
   }
@@ -563,7 +618,7 @@ html, body {
     font-size: 17px;
     letter-spacing: 7px;
     margin-top: 15px;
-  }
+  } */
 }
 
 .form {
@@ -609,6 +664,7 @@ html, body {
 }
 .form_title01 {
   font-size: 32px;
+  font-weight: 300;
   line-height: 60px;
   letter-spacing: 10px;
   margin-bottom: 80px;
@@ -617,14 +673,31 @@ html, body {
 .form_title02 {
   position: relative;
   top: -4px;
-  font-size: 24px;
+  font-size: 18px;
+  letter-spacing: 6px;
   display: inline-block;
 }
+/* 擬似要素"|" */
+.room_title02::before,
+.form_title02::before {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 45px;
+    background-color: #383838;
+    margin-right: 30px;
+    margin-left: 20px;
+    vertical-align: middle;
+    position: relative;
+    top: -2px;
+    /* letter-spacing: normal; */
+}
 .form_description {
-  font-size: 20px;
+  font-size: 19.5px;
+  font-weight: 300;
   color: #383838;
   line-height: 2;
-  letter-spacing: 4.5px;
+  letter-spacing: 3.5px;
 }
 .reservation_form {
   max-width: 800px;
@@ -791,12 +864,13 @@ html, body {
   font-weight: normal;
 }
 .form_notes {
-  font-size: 16px;
+  font-size: 15px;
+  font-weight: 300;
   letter-spacing: 2.8px;
   color: #383838;
   line-height: 1.7;
   position: relative;
-  margin-top: 30px;
+  margin-top: 50px;
   margin-bottom: 30px;
   text-align: left;
   padding: 0 15px;
@@ -812,11 +886,11 @@ html, body {
   background-color: #E0DACE;
   position: absolute;
   left: 0;
-  top: 10px;
+  top: -10px;
 }
 .form_submit {
   text-align: center;
-  margin-top: 10px;
+  margin-top: 40px;
 }
 .submit_btn {
   background-color: #B8A973;
@@ -824,10 +898,20 @@ html, body {
   border: none;
   padding: 12px 100px;
   font-size: 16px;
+  font-weight: 300;
   border-radius: 25px;
   cursor: pointer;
   transition: background-color 0.3s, transform 0.1s;
   letter-spacing: 1px;
+  font-family:
+  "Noto Serif JP",
+  "MS PMincho",
+  "MS Mincho",
+  "Yu Mincho",
+  "Hiragino Mincho ProN",
+  "Hiragino Mincho Pro",
+  "IPA Mincho",
+  serif; 
 }
 .submit_btn:hover {
   background-color: #B8A973;
@@ -842,7 +926,43 @@ html, body {
   .form {
     height: auto;
     min-height: 2800px;
-    max-height: 3000px;
+    max-height: 3800px;
+  }
+  .form_title01 {
+    font-size: 48px;
+    font-weight: 300;
+    line-height: 60px;
+    letter-spacing: 10px;
+    margin-bottom: 80px;
+    color: #383838;
+  }
+  .form_title02 {
+    position: relative;
+    top: -4px;
+    font-size: 27px;
+    letter-spacing: 6px;
+    display: inline-block;
+  }
+  .room_title02::before,
+  .form_title02::before {
+    content: "";
+    display: inline-block;
+    width: 2px;
+    height: 56.25px;
+    background-color: #383838;
+    margin-right: 35px;
+    margin-left: 25px;
+    vertical-align: middle;
+    position: relative;
+    top: -8px;
+    /* letter-spacing: normal; */
+  }
+  .form_description {
+    font-size: 29.25px;
+    font-weight: 300;
+    color: #383838;
+    line-height: 2;
+    letter-spacing: 3.5px;
   }
   .form_item {
     flex-direction: column;
@@ -896,6 +1016,40 @@ html, body {
     grid-row: 3 / 4;
     margin-left: 0;
   }
+  .form_notes {
+    font-size: 22.5px;
+    font-weight: 300;
+    letter-spacing: 2.8px;
+    color: #383838;
+    line-height: 1.7;
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-align: left;
+    padding: 0 15px;
+    padding-top: 40px;
+  }
+  .submit_btn {
+    background-color: #B8A973;
+    color: #fff;
+    border: none;
+    padding: 18px 150px;
+    font-size: 24px;
+    font-weight: 300;
+    border-radius: 37.5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+    letter-spacing: 1px;
+    font-family:
+    "Noto Serif JP",
+    "MS PMincho",
+    "MS Mincho",
+    "Yu Mincho",
+    "Hiragino Mincho ProN",
+    "Hiragino Mincho Pro",
+    "IPA Mincho",
+    serif; 
+  }
 }
 
 
@@ -936,7 +1090,7 @@ body.page-thanks {
 .header-thanks-override .logo img {
   max-width: 80%;
   height: auto;
-  padding-left: 45px;
+  padding-left: 30px;
 }
 .header-thanks-override .nav ul {
   display: flex;
@@ -944,17 +1098,19 @@ body.page-thanks {
   list-style: none;
 }
 .header-thanks-override .nav .menu {
-  margin-right: 35px;
-  font-size: 22px;
+  margin-right: 50px;
+  font-size: 20px;
+  font-weight: 300;
   color: #fff;
-  letter-spacing: 0.4em;
+  letter-spacing: 6px;
 }
 .header-thanks-override .nav .btn {
-  padding: 12.5px 55px;
-  font-size: 22px;
+  padding: 8px 58px;
+  font-size: 18px;
+  font-weight: 300;
 }
 .thanks_page_container {
-  padding-top: 280px;
+  padding-top: 400px;
   padding-bottom: 80px;
   min-height: 1000px;
   box-sizing: border-box;
@@ -971,14 +1127,15 @@ body.page-thanks {
 }
 .thanks_title {
   font-size: 35px;
+  font-weight: 300;
   color: #383838;
-  margin-bottom: 50px;
-  font-weight: 500;
-  letter-spacing: 3px;
+  margin-bottom: 90px;
+  font-weight: 300;
+  letter-spacing: 8px;
 }
 .notes_title {
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 300;
   color: #383838;
   margin-bottom: 0;
   letter-spacing: 3px;
@@ -988,6 +1145,7 @@ body.page-thanks {
 .thanks_closing_block {
   margin-bottom: 45px;
   font-size: 20px;
+  font-weight: 300;
   letter-spacing: 3px;
   line-height: 2.3;
   color: #383838;
@@ -1023,7 +1181,7 @@ body.page-thanks {
     font-size: 15px;
   }
   .thanks_page_container {
-    padding-top: 280px;
+    padding-top: 300px;
     padding-bottom: 80px;
     min-height: 100vh;
     min-width: 600px;
@@ -1034,12 +1192,14 @@ body.page-thanks {
     padding-right: 15px;
   }
   .thanks_title {
+    font-size: 43.75px;
     letter-spacing: 3.8px;
   }
   .thanks_message_block,
   .thanks_notes_block,
   .thanks_closing_block {
     text-align: left;
+    font-size: 25px;
     padding-left: 15px;
     padding-right: 15px;
     letter-spacing: 3.8px;
