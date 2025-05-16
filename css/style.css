@@ -240,6 +240,24 @@ html, body {
 
 
 @media screen and (max-width: 729px) {
+  html, body {
+    width: 375px;
+    height: 100%;
+    font-family:
+    /* Google Fonts */
+    "Noto Serif JP",
+    /* Windows */
+    "MS PMincho",
+    "MS Mincho",
+    "Yu Mincho",
+    /* macOS */
+    "Hiragino Mincho ProN",
+    "Hiragino Mincho Pro",
+    /* Linux */
+    "IPA Mincho",
+    serif;
+    color: #383838;
+  }
   .header_inner {
     margin-top: 0;
     display: flex;
@@ -438,6 +456,24 @@ html, body {
 
 
 @media screen and (max-width: 729px) {
+  html, body {
+    width: 375px;
+    height: 100%;
+    font-family:
+    /* Google Fonts */
+    "Noto Serif JP",
+    /* Windows */
+    "MS PMincho",
+    "MS Mincho",
+    "Yu Mincho",
+    /* macOS */
+    "Hiragino Mincho ProN",
+    "Hiragino Mincho Pro",
+    /* Linux */
+    "IPA Mincho",
+    serif;
+    color: #383838;
+  }
   .about {
     width: 375px;
     min-height: 620px;
@@ -736,6 +772,24 @@ html, body {
 
 
 @media screen and (max-width: 729px) {
+  html, body {
+    width: 375px;
+    height: 100%;
+    font-family:
+    /* Google Fonts */
+    "Noto Serif JP",
+    /* Windows */
+    "MS PMincho",
+    "MS Mincho",
+    "Yu Mincho",
+    /* macOS */
+    "Hiragino Mincho ProN",
+    "Hiragino Mincho Pro",
+    /* Linux */
+    "IPA Mincho",
+    serif;
+    color: #383838;
+  }
   .room {
     width: 375px;
     min-width: 375px;
@@ -1312,6 +1366,24 @@ html, body {
 
 
 @media screen and (max-width: 729px) {
+  html, body {
+    width: 375px;
+    height: 100%;
+    font-family:
+    /* Google Fonts */
+    "Noto Serif JP",
+    /* Windows */
+    "MS PMincho",
+    "MS Mincho",
+    "Yu Mincho",
+    /* macOS */
+    "Hiragino Mincho ProN",
+    "Hiragino Mincho Pro",
+    /* Linux */
+    "IPA Mincho",
+    serif;
+    color: #383838;
+  }
   .form {
     width: 375px;
     min-width: 375px;
@@ -1713,6 +1785,24 @@ body.page-thanks {
 
 
 @media screen and (max-width: 729px) {
+  html, body {
+    width: 375px;
+    height: 100%;
+    font-family:
+    /* Google Fonts */
+    "Noto Serif JP",
+    /* Windows */
+    "MS PMincho",
+    "MS Mincho",
+    "Yu Mincho",
+    /* macOS */
+    "Hiragino Mincho ProN",
+    "Hiragino Mincho Pro",
+    /* Linux */
+    "IPA Mincho",
+    serif;
+    color: #383838;
+  }
   .header-thanks-override .logo img {
     width: 80px;
     height: 50px;
