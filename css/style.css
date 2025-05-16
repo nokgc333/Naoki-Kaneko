@@ -527,7 +527,7 @@ html, body {
 
 .room {
   min-width: 750px;
-  min-height: 1850px;
+  min-height: 1650px;
   padding: 20px 40px;
   background: url('../images/room_bg.png') no-repeat center center / cover;
   height: auto;
@@ -671,24 +671,24 @@ html, body {
   z-index:1;
 }
 .room_textarea .title {
- font-size: 23px;
- font-weight: 400;
- letter-spacing: 8px;
- margin: 0 0 20px;
- color: #383838;
+  font-size: 23px;
+  font-weight: 400;
+  letter-spacing: 8px;
+  margin: 0 0 20px;
+  color: #383838;
 }
 .room_textarea .text {
- font-size: 16px;
- font-weight: 400;
- letter-spacing: 4.8px;
- color: #383838;
- line-height: 2;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 4.8px;
+  color: #383838;
+  line-height: 2;
 }
 
 
 @media screen and (max-width: 1239px) {
   .room {
-    height: 2800px;
+    height: 2450px;
   }
   .room_pattern {
     position: absolute;
@@ -774,11 +774,11 @@ html, body {
 }
 
 
-@media screen and (max-width: 1239px) {
+/* @media screen and (max-width: 1239px) {
   .room {
     height: 2500px;
   }
-}
+} */
 
 
 @media screen and (max-width: 729px) {
@@ -1621,113 +1621,113 @@ html, body {
 
 
 body.page-thanks {
- background-color: #fff;
- font-family:
- /* Google Fonts */
- "Noto Serif JP",
- "MS PMincho",
- "MS Mincho",
- "Yu Mincho",
- "Hiragino Mincho ProN",
- "Hiragino Mincho Pro",
- "IPA Mincho",
- serif;
- color: #383838;
+  background-color: #fff;
+  font-family:
+  /* Google Fonts */
+  "Noto Serif JP",
+  "MS PMincho",
+  "MS Mincho",
+  "Yu Mincho",
+  "Hiragino Mincho ProN",
+  "Hiragino Mincho Pro",
+  "IPA Mincho",
+  serif;
+  color: #383838;
 }
 .header-thanks-override {
- width: 100%;
- background-color: #383838;
- position: absolute;
- z-index: 10;
- height: 220px;
- padding-top: 15px;
- padding-bottom: 15px;
- display: flex;
- align-items: center;
+  width: 100%;
+  background-color: #383838;
+  position: absolute;
+  z-index: 10;
+  height: 220px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  display: flex;
+  align-items: center;
 }
 .header-thanks-override .header_inner {
- display: flex;
- justify-content: space-between;
- align-items: center;
- margin-top: 0;
- width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0;
+  width: 100%;
 }
 .header-thanks-override .logo img {
- max-width: 100%;
- height: 58.63px;
- padding-left: 30px;
+  max-width: 100%;
+  height: 58.63px;
+  padding-left: 30px;
 }
 .header-thanks-override .nav ul {
- display: flex;
- align-items: center;
- list-style: none;
+  display: flex;
+  align-items: center;
+  list-style: none;
 }
 .header-thanks-override .nav .menu {
- margin-right: 50px;
- font-size: 18px;
- font-weight: 400;
- line-height: 46px;
- letter-spacing: 6px;
- color: #fff;
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 46px;
+  letter-spacing: 6px;
+  color: #fff;
 }
 .header-thanks-override .nav .btn {
- padding: 8px 58px;
- font-size: 16px;
- font-weight: 400;
- line-height: 40px;
- letter-spacing: 3px;
+  padding: 8px 58px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 3px;
 }
 .thanks_page_container {
- padding-top: 325px;
- padding-bottom: 200px;
- min-height: 1000px;
- box-sizing: border-box;
- display: flex;
- flex-direction: column;
- align-items: center;
- justify-content: flex-start;
+  padding-top: 325px;
+  padding-bottom: 200px;
+  min-height: 1000px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 }
 .thanks_content_wrapper {
- max-width: 1300px;
- width: 90%;
- text-align: center;
- padding: 20px;
+  max-width: 1300px;
+  width: 90%;
+  text-align: center;
+  padding: 20px;
 }
 .thanks_title {
- font-size: 28px;
- font-weight: 400;
- line-height: 40px;
- color: #383838;
- margin-bottom: 70px;
- font-weight: 300;
- letter-spacing: 8px;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 40px;
+  color: #383838;
+  margin-bottom: 70px;
+  font-weight: 300;
+  letter-spacing: 8px;
 }
 .notes_title {
- font-size: 18px;
- font-weight: 400;
- color: #383838;
- margin-bottom: 0;
- letter-spacing: 3px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #383838;
+  margin-bottom: 0;
+  letter-spacing: 3px;
 }
 .thanks_message_block,
 .thanks_notes_block,
 .thanks_closing_block {
- margin-bottom: 45px;
- font-size: 18px;
- font-weight: 400;
- line-height: 34px;
- letter-spacing: 3px;
- color: #383838;
+  margin-bottom: 45px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: 3px;
+  color: #383838;
 }
 .thanks_message_block:last-child,
 .thanks_notes_block:last-child,
 .thanks_closing_block:last-child {
- margin-bottom: 0;
+  margin-bottom: 0;
 }
 .notes_text {
- display: inline-block;
- text-align: left;
- max-width: 100%;
+  display: inline-block;
+  text-align: left;
+  max-width: 100%;
 }
 
 
