@@ -241,7 +241,8 @@ html, body {
 
 @media screen and (max-width: 729px) {
   html, body {
-    width: 375px;
+    width: 100%;
+    min-width: 375px;
     height: 100%;
     font-family:
     /* Google Fonts */
@@ -257,6 +258,12 @@ html, body {
     "IPA Mincho",
     serif;
     color: #383838;
+  }
+  .header {
+    width: 100%;
+    min-width: 375px;
+    position: absolute;
+    z-index: 10;
   }
   .header_inner {
     margin-top: 0;
@@ -277,7 +284,8 @@ html, body {
     min-height: 380px;
     position: relative;
     overflow: hidden;
-    width: 375px;
+    width: 100%;
+    min-width: 375px;
     height: 380px;
     background: url('../images/kv.png') no-repeat center center/cover;
   }
@@ -309,9 +317,9 @@ html, body {
     color: #fff;
   }
   .kana2 {
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 30%;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 30%;
   }
   .conetainer header_inner .nav .scroll{
     display: none;
@@ -457,7 +465,8 @@ html, body {
 
 @media screen and (max-width: 729px) {
   html, body {
-    width: 375px;
+    width: 100%;
+    min-width: 375px;
     height: 100%;
     font-family:
     /* Google Fonts */
@@ -475,7 +484,8 @@ html, body {
     color: #383838;
   }
   .about {
-    width: 375px;
+    width: 100%;
+    min-width: 375px;
     min-height: 620px;
     max-height: 620px;
   }
@@ -517,7 +527,7 @@ html, body {
 
 .room {
   min-width: 750px;
-  min-height: 1850px;
+  min-height: 1650px;
   padding: 20px 40px;
   background: url('../images/room_bg.png') no-repeat center center / cover;
   height: auto;
@@ -661,24 +671,24 @@ html, body {
   z-index:1;
 }
 .room_textarea .title {
- font-size: 23px;
- font-weight: 400;
- letter-spacing: 8px;
- margin: 0 0 20px;
- color: #383838;
+  font-size: 23px;
+  font-weight: 400;
+  letter-spacing: 8px;
+  margin: 0 0 20px;
+  color: #383838;
 }
 .room_textarea .text {
- font-size: 16px;
- font-weight: 400;
- letter-spacing: 4.8px;
- color: #383838;
- line-height: 2;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 4.8px;
+  color: #383838;
+  line-height: 2;
 }
 
 
 @media screen and (max-width: 1239px) {
   .room {
-    height: 2800px;
+    height: 2450px;
   }
   .room_pattern {
     position: absolute;
@@ -764,16 +774,17 @@ html, body {
 }
 
 
-@media screen and (max-width: 1239px) {
+/* @media screen and (max-width: 1239px) {
   .room {
     height: 2500px;
   }
-}
+} */
 
 
 @media screen and (max-width: 729px) {
   html, body {
-    width: 375px;
+    width: 100%;
+    min-width: 375px;
     height: 100%;
     font-family:
     /* Google Fonts */
@@ -791,14 +802,14 @@ html, body {
     color: #383838;
   }
   .room {
-    width: 375px;
+    width: 100%;
     min-width: 375px;
     height: 1500px;
     min-height: 1500px;
     padding: 20px 20px;
   }
   .room_inner {
-    max-width: 375px;
+    max-width: 1200px;
     margin: 0; 
   }
   .room_pattern {
@@ -874,14 +885,16 @@ html, body {
     transition: background-color 0.3s;
   }
   .room_visual_image {
-    width: 335px;
+    width: 100%;
+    min-width: 335px;
     max-width: 1500px;
     height: 210px;
     display: block;
     margin: 0 auto 30px;
   }
   .room_textarea {
-    width: 335px;
+    width: 100%;
+    min-width: 335px;
     height: 293px;
     padding: 20px;
     position: relative;
@@ -912,6 +925,7 @@ html, body {
 
 
 .form {
+  width: 100%;
   min-width: 375px;
   background: url('') no-repeat center center / cover;
   height: auto;
@@ -1367,6 +1381,7 @@ html, body {
 
 @media screen and (max-width: 729px) {
   html, body {
+    width: 100%;
     width: 375px;
     height: 100%;
     font-family:
@@ -1385,7 +1400,7 @@ html, body {
     color: #383838;
   }
   .form {
-    width: 375px;
+    width: 100%;
     min-width: 375px;
     height: auto;
     min-height: 2100px;
@@ -1464,6 +1479,7 @@ html, body {
   .form_select,
   .form_textarea {
     width: 100%;
+    min-width: 335px;
     padding: 10px 12px;
     border: 1px solid #D3CFC2;
     border-radius: 3px;
@@ -1476,7 +1492,8 @@ html, body {
   }
   .input_field_wrapper .form_input {
     padding: 25px 10px;
-    width: 335px;
+    width: 100%;
+    min-width: 335px;
     font-size: 16px;
     font-weight: 400;
     letter-spacing: 2px;
@@ -1484,20 +1501,22 @@ html, body {
   }
   .input_field_wrapper .form_select {
     padding: 25px 10px;
-    width: 335px;
+    width: 100%;
+    min-width: 335px;
     font-size: 16px;
     font-weight: 400;
     letter-spacing: 2px;
   }
   .input_field_wrapper .form_textarea {
     padding: 25px 10px;
-    width: 335px;
+    width: 100%;
+    min-width: 335px;
     font-size: 16px;
     font-weight: 400;
     resize: none;
   }
   .select_wrapper {
-  position: relative;
+    position: relative;
   }
   .select_wrapper::after {
     content: '▼';
@@ -1557,7 +1576,8 @@ html, body {
   }
   .form_notes {
     position: relative;
-    width: 335px;
+    width: 100%;
+    min-width: 335px;
     font-size: 14px;
     font-weight: 400;
     line-height: 30px;
@@ -1601,113 +1621,113 @@ html, body {
 
 
 body.page-thanks {
- background-color: #fff;
- font-family:
- /* Google Fonts */
- "Noto Serif JP",
- "MS PMincho",
- "MS Mincho",
- "Yu Mincho",
- "Hiragino Mincho ProN",
- "Hiragino Mincho Pro",
- "IPA Mincho",
- serif;
- color: #383838;
+  background-color: #fff;
+  font-family:
+  /* Google Fonts */
+  "Noto Serif JP",
+  "MS PMincho",
+  "MS Mincho",
+  "Yu Mincho",
+  "Hiragino Mincho ProN",
+  "Hiragino Mincho Pro",
+  "IPA Mincho",
+  serif;
+  color: #383838;
 }
 .header-thanks-override {
- width: 100%;
- background-color: #383838;
- position: absolute;
- z-index: 10;
- height: 220px;
- padding-top: 15px;
- padding-bottom: 15px;
- display: flex;
- align-items: center;
+  width: 100%;
+  background-color: #383838;
+  position: absolute;
+  z-index: 10;
+  height: 220px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  display: flex;
+  align-items: center;
 }
 .header-thanks-override .header_inner {
- display: flex;
- justify-content: space-between;
- align-items: center;
- margin-top: 0;
- width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0;
+  width: 100%;
 }
 .header-thanks-override .logo img {
- max-width: 100%;
- height: 58.63px;
- padding-left: 30px;
+  max-width: 100%;
+  height: 58.63px;
+  padding-left: 30px;
 }
 .header-thanks-override .nav ul {
- display: flex;
- align-items: center;
- list-style: none;
+  display: flex;
+  align-items: center;
+  list-style: none;
 }
 .header-thanks-override .nav .menu {
- margin-right: 50px;
- font-size: 18px;
- font-weight: 400;
- line-height: 46px;
- letter-spacing: 6px;
- color: #fff;
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 46px;
+  letter-spacing: 6px;
+  color: #fff;
 }
 .header-thanks-override .nav .btn {
- padding: 8px 58px;
- font-size: 16px;
- font-weight: 400;
- line-height: 40px;
- letter-spacing: 3px;
+  padding: 8px 58px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 3px;
 }
 .thanks_page_container {
- padding-top: 325px;
- padding-bottom: 200px;
- min-height: 1000px;
- box-sizing: border-box;
- display: flex;
- flex-direction: column;
- align-items: center;
- justify-content: flex-start;
+  padding-top: 325px;
+  padding-bottom: 200px;
+  min-height: 1000px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 }
 .thanks_content_wrapper {
- max-width: 1300px;
- width: 90%;
- text-align: center;
- padding: 20px;
+  max-width: 1300px;
+  width: 90%;
+  text-align: center;
+  padding: 20px;
 }
 .thanks_title {
- font-size: 28px;
- font-weight: 400;
- line-height: 40px;
- color: #383838;
- margin-bottom: 70px;
- font-weight: 300;
- letter-spacing: 8px;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 40px;
+  color: #383838;
+  margin-bottom: 70px;
+  font-weight: 300;
+  letter-spacing: 8px;
 }
 .notes_title {
- font-size: 18px;
- font-weight: 400;
- color: #383838;
- margin-bottom: 0;
- letter-spacing: 3px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #383838;
+  margin-bottom: 0;
+  letter-spacing: 3px;
 }
 .thanks_message_block,
 .thanks_notes_block,
 .thanks_closing_block {
- margin-bottom: 45px;
- font-size: 18px;
- font-weight: 400;
- line-height: 34px;
- letter-spacing: 3px;
- color: #383838;
+  margin-bottom: 45px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: 3px;
+  color: #383838;
 }
 .thanks_message_block:last-child,
 .thanks_notes_block:last-child,
 .thanks_closing_block:last-child {
- margin-bottom: 0;
+  margin-bottom: 0;
 }
 .notes_text {
- display: inline-block;
- text-align: left;
- max-width: 100%;
+  display: inline-block;
+  text-align: left;
+  max-width: 100%;
 }
 
 
@@ -1786,7 +1806,8 @@ body.page-thanks {
 
 @media screen and (max-width: 729px) {
   html, body {
-    width: 375px;
+    width: 100%;
+    min-width: 375px;
     height: 100%;
     font-family:
     /* Google Fonts */
@@ -1812,7 +1833,7 @@ body.page-thanks {
     align-items: center;
   }
   .header-thanks-override {
-    width: 375px;
+    width: 100%;
     min-width: 375px;
     height: 72px;
     background-color: #383838;
@@ -1827,8 +1848,8 @@ body.page-thanks {
   .thanks_page_container {
     padding-top: 122px;
     padding-bottom: 80px;
-    width: 375px;
-    min-width: 375px;
+    width: 100%;
+    min-width: 335px;
     height: 900px;
     min-height: 900px;
   }
