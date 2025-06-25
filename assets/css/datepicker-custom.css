@@ -1,0 +1,175 @@
+/* ーーーーーーーーーーーーーーーーーー */
+
+/* Datepicker */
+
+/* ーーーーーーーーーーーーーーーーーー */
+
+
+/* リセット */
+.ui-datepicker,
+.ui-datepicker *{
+    background:none!important;
+    border:none!important;
+    box-shadow:none!important;
+    font-family:inherit;
+}
+/* 外枠 */
+.ui-datepicker{
+    width:540px!important;
+    height:348px!important;
+    background:#fff!important;
+    border:1px solid #E4E4E4!important;
+    box-shadow:0 6px 16px rgba(0,0,0,.08)!important;
+    z-index:1000!important;
+    display:flex!important;
+    flex-direction:column!important;
+}
+/* ヘッダー */
+.ui-datepicker-header{
+    position:relative!important;
+    display:flex!important;
+    justify-content:center!important;
+    align-items:center!important;
+    flex:0 0 48px!important;
+    padding:0 36px!important;
+}
+/* タイトル */
+.ui-datepicker-title{
+    font-size:16px!important;
+    letter-spacing:1px!important;
+    color:#383838!important;
+    font-weight:400!important;
+    pointer-events:none;
+}
+/* 矢印 */
+.ui-datepicker-prev,
+.ui-datepicker-next{
+    position:absolute!important;
+    top:50%!important;
+    transform:translateY(-50%)!important;
+    width:28px;height:28px!important;
+    cursor:pointer!important;
+}
+.ui-datepicker-prev{left:150px!important;}
+.ui-datepicker-next{right:150px!important;}
+/* アイコン */
+.ui-datepicker-prev::before,
+.ui-datepicker-next::before{
+    content:'';display:block;
+    position:absolute;top:50%;left:50%;
+    width:10px;height:10px;
+    border:2px solid #B5B5B5;
+    border-top:none;border-right:none;
+    transform-origin:center;
+    transition:border-color .18s;
+}
+.ui-datepicker-prev::before{
+    transform:translate(-50%,-50%) rotate(-45deg);
+}
+.ui-datepicker-next::before{
+    transform:translate(-50%,-50%) rotate(135deg);
+}
+.ui-datepicker-prev:hover::before,
+.ui-datepicker-next:hover::before{
+    border-color:#383838;
+}
+/* カレンダー */
+.ui-datepicker-calendar{
+    width:calc(100% - 16px)!important;
+    margin:8px!important;
+    border-collapse:collapse!important;
+    flex:1 1 auto!important;
+}
+/* 曜日 */
+.ui-datepicker-calendar th{
+    font-size:13px!important;
+    font-weight:400!important;
+    height:24px!important;
+    color:#B5B5B5!important;
+}
+.ui-datepicker-calendar th:first-child{color:#D9534F!important;}
+.ui-datepicker-calendar th:last-child {color:#1E70E4!important;}
+/* 日付 */
+.ui-datepicker-calendar td{
+    width:14.285%!important;
+    height:40px!important;
+    padding:0!important;
+}
+.ui-datepicker-calendar td a,
+.ui-datepicker-calendar td span{
+    display:block!important;
+    height:100%!important;
+    line-height:40px!important;
+    text-align:center!important;
+    font-size:15px!important;
+    letter-spacing:1px!important;
+    color:#383838!important;
+    transition:background-color .18s!important;
+}
+/* 週末 */
+.ui-datepicker-calendar td:first-child a,
+.ui-datepicker-calendar td:last-child  a{color:#383838!important;}
+/* ホバー時 */
+.ui-datepicker-calendar td a:hover{background:#F2F2F2!important;}
+/* 選択日 */
+.ui-datepicker-calendar td.ui-state-active a,
+.ui-datepicker-calendar td.ui-datepicker-current-day a{
+    background:#B8A973!important;
+    color:#fff!important;
+}
+/* 本日 */
+.ui-datepicker-calendar td.ui-datepicker-today a{
+    background-color: #B8A973 !important;
+    color:#fff!important;
+}
+/* 無効日 */
+.ui-datepicker-calendar td.ui-state-disabled span{
+    color:#E0E0E0!important;
+    cursor:not-allowed!important;
+}
+/* スラッシュ */
+.ui-datepicker-title .ui-datepicker-month::before{
+    content:'/';
+    margin-right:8px;
+}
+/* 矢印回転 */
+.ui-datepicker-prev::before{
+    transform:translate(-50%,-50%) rotate(45deg);
+}
+.ui-datepicker-next::before{
+    transform:translate(-50%,-50%) rotate(-135deg);
+}
+.ui-datepicker[style*="display: none"]{
+  /* jQuery UI が inline で display:none を付けたときだけ強制で隠す */
+  display:none !important;
+}
+
+@media(max-width:1239px) {
+  .ui-datepicker{
+    width:280px!important;
+    height:280px!important;
+  }
+  .ui-datepicker-header{
+    flex:0 0 36px!important;
+    padding:0 32px!important;
+  }
+  .ui-datepicker-title{font-size:14px!important;}
+  .ui-datepicker-prev,
+  .ui-datepicker-next{width:24px;height:24px!important;}
+  .ui-datepicker-prev{left:8px!important;}
+  .ui-datepicker-next{right:8px!important;}
+  .ui-datepicker-prev::before,
+  .ui-datepicker-next::before{width:8px;height:8px;}
+  .ui-datepicker-calendar{margin:6px!important;}
+  .ui-datepicker-calendar th{
+    font-size:11px!important;height:20px!important;
+  }
+  .ui-datepicker-calendar td{
+    height:32px!important;
+  }
+  .ui-datepicker-calendar td a,
+  .ui-datepicker-calendar td span{
+    line-height:32px!important;
+    font-size:13px!important;
+  }
+}
